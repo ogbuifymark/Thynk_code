@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="Implementations\" />
+    <None Remove="Factory\" />
+    <None Remove="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implementations\" />
+    <Folder Include="Factory\" />
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Thynk_Code.Model\Thynk_Code.Model.csproj" />
+    <ProjectReference Include="..\Thynk_Code.Data\Thynk_Code.Data.csproj" />
+  </ItemGroup>
+</Project>
